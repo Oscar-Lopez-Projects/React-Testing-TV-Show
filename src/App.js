@@ -21,6 +21,8 @@ export default function App() {
         .then(res => {
           setShow(res.data);
           setSeasons(formatSeasons(res.data._embedded.episodes));
+
+          console.log('seasons, asdfghjkl : ', res.data._embedded.episodes);
         });
 
   }, []);

@@ -6,7 +6,7 @@ import axios from 'axios';
      return axios
      .get("https://api.tvmaze.com/singlesearch/shows?q=stranger-things&embed=episodes")
      .then(data => {
-         console.log(data);
+         console.log('find the episode', data);
          return data;
      })
      .catch(error => {
